@@ -8,7 +8,7 @@ replace google.golang.org/grpc => google.golang.org/grpc v1.26.0
 
 require (
 	github.com/golang/protobuf v1.4.2
-	github.com/jinzhu/gorm v1.9.16 // indirect
+	github.com/jinzhu/gorm v1.9.16
 	github.com/micro/go-micro/v3 v3.0.0-alpha.0.20200812115214-1fa3ac5599eb
 	github.com/micro/micro/v3 v3.0.0-beta
 	google.golang.org/protobuf v1.25.0

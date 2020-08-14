@@ -5,35 +5,21 @@ package account;
 option go_package = "proto;account";
 
 service Account {
-	rpc Call(Request) returns (Response) {}
-	rpc Stream(StreamingRequest) returns (stream StreamingResponse) {}
-	rpc PingPong(stream Ping) returns (stream Pong) {}
+	rpc Create(CreateReq) returns (CreateRes) {}
 }
 
-message Message {
-	string say = 1;
+message CreateReq {
+	string Email = 1;
+	string FullName = 2;
+	string Role = 3;
 }
 
-message Request {
-	string name = 1;
-}
-
-message Response {
-	string msg = 1;
-}
-
-message StreamingRequest {
-	int64 count = 1;
-}
-
-message StreamingResponse {
-	int64 count = 1;
-}
-
-message Ping {
-	int64 stroke = 1;
-}
-
-message Pong {
-	int64 stroke = 1;
+message CreateRes {
+	string ID = 1;
+	string Email = 2;
+	string FullName = 3;
+	string Role = 4;
+	string CreatedAt = 5;
+	string UpdatedAt = 6;
+	string DeletedAt = 7;
 }

@@ -8,7 +8,8 @@ import (
 	account "account/proto"
 )
 
-type Account struct{}
+type Account struct {
+}
 
 // Call is a single request handler called via client.Call or the generated client code
 func (e *Account) Call(ctx context.Context, req *account.Request, rsp *account.Response) error {

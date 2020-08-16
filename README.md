@@ -8,7 +8,7 @@ Boilerplate code for kickstart micro services project.
 - [Protocol Buffers](https://github.com/protocolbuffers/protobuf/releases) version `3.0.0` or higher.
 
 ## Instructions
-### Generals
+### Build and run all services
 ```
 micro server
 ./setups.sh
@@ -18,3 +18,9 @@ micro server
 micro kill <service_name>
 ./<service_name>/service_setup.sh
 ```
+### Generate an service
+- New Go Micro service.
+```
+micro new <service_name>
+```
+- copy `service_setup.sh` file to service folder
